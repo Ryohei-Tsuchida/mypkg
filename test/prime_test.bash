@@ -8,6 +8,6 @@ dir=~
 cd $dir/ros2_ws
 colcon build
 source $dir/.bashrc
-timeout 60 ros2 launch mypkg randam_number_ans.py > /tmp/mypkg.log
+timeout 40 ros2 launch mypkg randam_number_ans.py > /tmp/mypkg.log
 
 cat /tmp/mypkg.log | grep 'Time up! The answer is:'
