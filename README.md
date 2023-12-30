@@ -1,7 +1,7 @@
 # mypkg
 [![test](https://github.com/Ryohei-Tsuchida/mypkg/actions/workflows/prime.yml/badge.svg)](https://github.com/Ryohei-Tsuchida/mypkg/actions/workflows/prime.yml)[![test](https://github.com/Ryohei-Tsuchida/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/Ryohei-Tsuchida/mypkg/actions/workflows/test.yml)
 
-ROS 2 のパッケージ
+ROS2のパッケージ
 
 ## リポジトリ内のノード,ファイル一覧
 
@@ -10,7 +10,7 @@ ROS 2 のパッケージ
    * トピックに流れるメッセージの型は16ビットの符号付き整数.
   
 ### listener.py
-* サブスクライバを持つノード. トピック`/countup`からメッセージを受信し表示する
+* サブスクライバを持つノード. トピック`/countup`からメッセージを受信し表示する.
 
 ### talk_listen.launch.py
 * talker.pyとlistener.pyを同時に起動する.
