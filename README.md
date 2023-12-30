@@ -1,11 +1,12 @@
 # mypkg
+[![test](https://github.com/Ryohei-Tsuchida/mypkg/actions/workflows/prime.yml/badge.svg)](https://github.com/Ryohei-Tsuchida/mypkg/actions/workflows/prime.yml)[![test](https://github.com/Ryohei-Tsuchida/mypkg/actions/workflows/test.yml/badge.svg)](https://github.com/Ryohei-Tsuchida/mypkg/actions/workflows/test.yml)
 
 ROS 2 のパッケージ
 
 ## リポジトリ内のノード,ファイル一覧
 
 ### talker.py
-* パブリッシャを持つノード. 数字をカウントしてトピック`/countup`を通じて送信する.
+* パブリッシャを持つノード. 数字をカウントし,トピック`/countup`を通じて送信する.
    * トピックに流れるメッセージの型は16ビットの符号付き整数.
   
 ### listener.py
