@@ -2,6 +2,7 @@
 [![test](https://github.com/Ryohei-Tsuchida/mypkg/actions/workflows/prime.yml/badge.svg)](https://github.com/Ryohei-Tsuchida/mypkg/actions/workflows/prime.yml)
 
 ROS2のパッケージ
+このリポジトリは,ROS 2を使用してランダムな整数を10個生成し,それに対する素数を選択するものです.
 
 ## リポジトリ内のノード,ファイル一覧
 
