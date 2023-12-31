@@ -10,9 +10,9 @@ class RandomNumberPublisher(Node):
     def __init__(self):
         super().__init__('random_number')
         self.publisher_ = self.create_publisher(Int32MultiArray, 'random_numbers', 10)
-        self.timer_ = self.create_timer(30.0, self.publish_numbers)  # 30秒ごとに実行
+        self.timer_ = self.create_timer(30.0, self.publish_numbers)
         self.last_numbers = None
-        self.publish_numbers()  # 初回は即座に実行
+        self.publish_numbers()
 
     def publish_numbers(self):
         numbers = self.generate_unique_numbers()

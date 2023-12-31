@@ -14,11 +14,11 @@ class RandomAnswerSubscriber(Node):
             'random_numbers',
             self.callback,
             10)
-        self.subscription  # prevent unused variable warning
+        self.subscription
         self.start_time = None
-        self.answered = False  # Flag to track if an answer has been provided
+        self.answered = False
         self.last_received_numbers = None
-        self.timer_ = self.create_timer(30.0, self.timer_callback)  # 30秒ごとに実行
+        self.timer_ = self.create_timer(30.0, self.timer_callback)
 
     def callback(self, msg):
         if self.answered:
@@ -33,7 +33,7 @@ class RandomAnswerSubscriber(Node):
             self.get_logger().info("Select a prime number from the following list:")
             self.get_logger().info(f"[{', '.join(map(str, self.last_received_numbers))}]")
         else:
-            self.answered = True  # Set the flag to indicate that an answer has been provided
+            self.answered = True
             self.timer_callback()
 
     def timer_callback(self):
@@ -45,7 +45,6 @@ class RandomAnswerSubscriber(Node):
             else:
                 self.get_logger().info("No prime numbers selected.")
 
-            # Avoid recursive calls to timer_callback
             self.timer_.cancel()
 
     def is_prime(self, num):

@@ -23,8 +23,6 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'talker = mypkg.talker:main',
-            'listener = mypkg.listener:main',
             'randam_number = mypkg.randam_number:main',
             'prime_ans = mypkg.prime_ans:main',
         ],
